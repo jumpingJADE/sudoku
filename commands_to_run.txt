@@ -1,0 +1,24 @@
+python3 -c 'from sudoku import *; Sudoku("sudoku_wrong_1.txt")'
+python3 -c 'from sudoku import *; Sudoku("sudoku_wrong_2.txt")'
+python3 -c 'from sudoku import *; Sudoku("sudoku_wrong_3.txt")'
+
+python3 -c 'from sudoku import *; sudoku = Sudoku("sudoku_1.txt"); sudoku.preassess()'
+python3 -c 'from sudoku import *; sudoku = Sudoku("sudoku_2.txt"); sudoku.preassess()'
+python3 -c 'from sudoku import *; sudoku = Sudoku("sudoku_3.txt"); sudoku.preassess()'
+python3 -c 'from sudoku import *; sudoku = Sudoku("sudoku_4.txt"); sudoku.preassess()'
+python3 -c 'from sudoku import *; sudoku = Sudoku("sudoku_5.txt"); sudoku.preassess()'
+
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_3.txt"); sudoku.bare_tex_output(); system("diff sol_sudoku_3_bare.tex sudoku_3_bare.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_3.txt"); sudoku.forced_tex_output(); system("diff sol_sudoku_3_forced.tex sudoku_3_forced.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_3.txt"); sudoku.marked_tex_output(); system("diff sol_sudoku_3_marked.tex sudoku_3_marked.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_3.txt"); sudoku.worked_tex_output(); system("diff sol_sudoku_3_worked.tex sudoku_3_worked.tex; echo $?")'
+
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_4.txt"); sudoku.bare_tex_output(); system("diff sol_sudoku_4_bare.tex sudoku_4_bare.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_4.txt"); sudoku.forced_tex_output(); system("diff sol_sudoku_4_forced.tex sudoku_4_forced.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_4.txt"); sudoku.marked_tex_output(); system("diff sol_sudoku_4_marked.tex sudoku_4_marked.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_4.txt"); sudoku.worked_tex_output(); system("diff sol_sudoku_4_worked.tex sudoku_4_worked.tex; echo $?")'
+
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_5.txt"); sudoku.bare_tex_output(); system("diff sol_sudoku_5_bare.tex sudoku_5_bare.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_5.txt"); sudoku.forced_tex_output(); system("diff sol_sudoku_5_forced.tex sudoku_5_forced.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_5.txt"); sudoku.marked_tex_output(); system("diff sol_sudoku_5_marked.tex sudoku_5_marked.tex; echo $?")'
+python3 -c 'from os import system; from sudoku import *; sudoku = Sudoku("sudoku_5.txt"); sudoku.worked_tex_output(); system("diff sol_sudoku_5_worked.tex sudoku_5_worked.tex; echo $?")'
